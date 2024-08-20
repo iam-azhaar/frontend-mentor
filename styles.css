@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #333;
+    background-color: #e9edc9; 
+    max-width: 100vw;
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    color: #fff;
+    background-color: #fdf0d5; 
+    width: 100%;
+    display: flex;
+    padding: 1rem 2rem;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.youtube {
+    background-color: #FF0000; 
+}
+.youtube:hover {
+    background-color: #CC0000;
+}
+
+.instagram { 
+    background: linear-gradient(135deg, #F58529, #DD2A7B, #8134AF, #515BD4);
+}
+.instagram:hover {
+    background: linear-gradient(135deg, #DD2A7B, #F58529, #8134AF, #515BD4);
+}
+
+.icon {
+    display: inline-block;
+    margin-right: 4px;
+    font-size: 19px;
+}
+
+.social-button:hover {
+    transform: translateY(-2px);
+}
+
+.container {
+    background-color: #f7ede2;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.200);
+    overflow: hidden;
+    width: 90%;
+    max-width: 1200px;
+    padding: 1rem;
+    margin: 2rem 0; 
+}
+
+.profile-header {
+    text-align: center;
+    padding: 2rem;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 4px solid #54bbdd; 
+}
+
+h1 {
+    margin: 0.5rem 0 0.2rem;
+    font-size: 2.2rem;
+    color: #333;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    color: #777;
+}
+
+.web-intro {
+    text-align: center;
+    margin: 1rem 0 6rem;
+    padding: 1rem;
+}
+
+.web-intro h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #023047; 
+}
+
+.web-intro p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.project {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.400);
+    width: calc(50% - 0.5rem); 
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.project h2 {
+    margin: 0.8rem 0;
+}
+
+.project-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.button {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 50px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.button:hover {
+    transform: translateY(-2px);
+}
+
+.button i {
+    margin-right: 8px;
+}
+
+.live-view {
+    background-color: #4caf50; 
+}
+.live-view:hover {
+    background-color: #388e3c;
+}
+
+.youtube-tutorial {
+    background-color: #ed2c49; 
+}
+.youtube-tutorial:hover {
+    background-color: #b1152d;
+}
+
+
+.footer {
+    width: 100%;
+    font-weight: 600;
+    color: #333;
+    background-color: #fdf0d5; 
+    padding: 0.6rem;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.heart {
+    color: #FF0000; 
+    font-size: 1.2rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .social-links {
+        margin-top: 1rem;
+    }
+
+    .project {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+
+    .web-intro h1 {
+        font-size: 2rem;
+    }
+
+    .web-intro p {
+        font-size: 1rem;
+    }
+
+    .project-buttons {
+        flex-direction: column;
+    }
+
+    .button {
+        padding: 0.4rem 0.8rem;
+    }
+}
